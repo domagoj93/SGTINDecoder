@@ -5,7 +5,7 @@ using System.Text;
 
 namespace SGTINDecoder.Models
 {
-    public class SGTIN_96 : SGTIN
+    public class SGTIN_96 : ISGTIN
     {
         public long Header { get; set; }
         public int Filter { get; set; }
@@ -15,6 +15,6 @@ namespace SGTINDecoder.Models
         public string SerialNumber { get; set; }
         public bool IsProperlyEncoded { get; set; }
         public string HexValue { get; set; }
-        public override string SGTIN_Type => "SGTIN-96";
+        public string SGTIN_Type => "SGTIN-96";
     }
 }

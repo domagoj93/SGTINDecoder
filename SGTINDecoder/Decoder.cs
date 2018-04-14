@@ -17,7 +17,7 @@ namespace SGTINDecoder
             result.HexValue = EPC_tag;
 
             //check if EPC_tag is valid SGTIN-96 tag
-            if (!Validator.IsValid_SGTIN_96(EPC_tag))
+            if (!Validator.IsValid_SGTIN_96(EPC_tag, true, true))
             {
                 result.IsProperlyEncoded = false;
                 result.ItemReference = 0;
@@ -51,7 +51,7 @@ namespace SGTINDecoder
             var companyPrefixBinary = binaryString.Substring(ranges.CompanyPrefixStart, partitionResult.CompanyPrefixBitsCount);
             result.CompanyPrefix = Convert.ToInt64(companyPrefixBinary, 2);
 
-            var itemReferenceBinary = binaryString.Substring(ranges.CompanyPrefixStart + partitionResult.CompanyPrefixBitsCount + 2, partitionResult.ItemReferenceBitsCount);
+            var itemReferenceBinary = binaryString.Substring(ranges.CompanyPrefixStart + partitionResult.CompanyPrefixBitsCount, partitionResult.ItemReferenceBitsCount);
             result.ItemReference = Convert.ToInt32(itemReferenceBinary, 2);
 
             result.SerialNumber = string.Concat(binaryString.TakeLast(ranges.SerialNumberLength));

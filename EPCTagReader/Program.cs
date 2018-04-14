@@ -12,10 +12,9 @@ namespace EPCTagReader
     {
         static void Main(string[] args)
         {
-            //var CSVData = Reader.ReadCSV($"{AppDomain.CurrentDomain.BaseDirectory}/Data/data.csv");
             var HEX_SGTIN_96_Tags = Reader.ReadTags($"{AppDomain.CurrentDomain.BaseDirectory}/Data/tags.txt");
 
-            const long MilkaOreoReference = 1253252; 
+            const long MilkaOreoReference = 1253252;
             List<SGTIN_96> decodedTags = new List<SGTIN_96>();
 
             foreach(var tag in HEX_SGTIN_96_Tags)
@@ -32,15 +31,13 @@ namespace EPCTagReader
             Console.WriteLine($"-----------------------------------------------");
             Console.WriteLine();
             Console.WriteLine($"List of Milka Oreo tags:");
-            Console.WriteLine();
             foreach (var tag in milkaOreoTags)
             {
-                Console.WriteLine($"Item Reference: {tag.ItemReference} Serial number: {tag.SerialNumber}");
+                Console.WriteLine($"Serial number: {tag.SerialNumber}");
             }
             Console.WriteLine();
             Console.WriteLine();
             Console.WriteLine($"List of not properly encoded tags:");
-            Console.WriteLine();
             foreach (var tag in notProperlyEncodedTags)
             {
                 Console.WriteLine(tag.HexValue);
