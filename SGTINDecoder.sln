@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2037
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SGTINDecoder", "SGTINDecoder\SGTINDecoder.csproj", "{B0CA26A3-4F45-46D3-9907-BE00114BD9B8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EPCTagReader", "EPCTagReader\EPCTagReader.csproj", "{21C5C360-BCF7-407E-B128-184DE1B058FF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SGTINDecoder.API", "SGTINDecoder.API\SGTINDecoder.API.csproj", "{86A7DF47-10F1-47B6-876C-21293648AEA7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "UnitTests\UnitTests.csproj", "{991C0ACC-2BE6-4036-BC7A-958EA050CC34}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B0CA26A3-4F45-46D3-9907-BE00114BD9B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0CA26A3-4F45-46D3-9907-BE00114BD9B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0CA26A3-4F45-46D3-9907-BE00114BD9B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0CA26A3-4F45-46D3-9907-BE00114BD9B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21C5C360-BCF7-407E-B128-184DE1B058FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21C5C360-BCF7-407E-B128-184DE1B058FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21C5C360-BCF7-407E-B128-184DE1B058FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21C5C360-BCF7-407E-B128-184DE1B058FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86A7DF47-10F1-47B6-876C-21293648AEA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86A7DF47-10F1-47B6-876C-21293648AEA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86A7DF47-10F1-47B6-876C-21293648AEA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86A7DF47-10F1-47B6-876C-21293648AEA7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{991C0ACC-2BE6-4036-BC7A-958EA050CC34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{991C0ACC-2BE6-4036-BC7A-958EA050CC34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{991C0ACC-2BE6-4036-BC7A-958EA050CC34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{991C0ACC-2BE6-4036-BC7A-958EA050CC34}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {54FAE0B7-A649-480D-ABC8-5A54134B9103}
+	EndGlobalSection
+EndGlobal
